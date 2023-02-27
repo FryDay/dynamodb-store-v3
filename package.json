@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-store-v3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementation of a session store using DynamoDB as an extension of the express-session middleware backed by the 3.x aws-sdk.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,5 +27,13 @@
     "@aws-sdk/client-dynamodb": "^3.279.0",
     "@aws-sdk/lib-dynamodb": "^3.279.0",
     "express-session": "^1.17.3"
-  }
+  },
+  "keywords": [
+    "dynamo",
+    "dynamodb",
+    "session",
+    "session-store",
+    "express-session",
+    "express"
+  ]
 }
