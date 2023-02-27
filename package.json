@@ -1,0 +1,31 @@
+{
+  "name": "dynamodb-store-v3",
+  "version": "1.0.0",
+  "description": "Implementation of a session store using DynamoDB as an extension of the express-session middleware backed by the 3.x aws-sdk.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FryDay/dynamodb-store-v3.git"
+  },
+  "author": "Jordan Day <fryday@dazelabs.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish-dryrun": "yarn build && yarn publish"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.17.6",
+    "@types/node": "17.0.41",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.279.0",
+    "@aws-sdk/lib-dynamodb": "^3.279.0",
+    "express-session": "^1.17.3"
+  }
+}
